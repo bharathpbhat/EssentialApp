@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CD0AF78929D60D4D005C1044 /* EssentialAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0AF78829D60D4D005C1044 /* EssentialAppApp.swift */; };
-		CD0AF78B29D60D4D005C1044 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0AF78A29D60D4D005C1044 /* ContentView.swift */; };
 		CD0AF78D29D60D4E005C1044 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD0AF78C29D60D4E005C1044 /* Assets.xcassets */; };
 		CD0AF79029D60D4E005C1044 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD0AF78F29D60D4E005C1044 /* Preview Assets.xcassets */; };
 		CD0AF79229D60D4E005C1044 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0AF79129D60D4E005C1044 /* Persistence.swift */; };
@@ -16,6 +15,30 @@
 		CD0AF7A029D60D4E005C1044 /* EssentialAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0AF79F29D60D4E005C1044 /* EssentialAppTests.swift */; };
 		CD0AF7AA29D60D4E005C1044 /* EssentialAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0AF7A929D60D4E005C1044 /* EssentialAppUITests.swift */; };
 		CD0AF7AC29D60D4E005C1044 /* EssentialAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0AF7AB29D60D4E005C1044 /* EssentialAppUITestsLaunchTests.swift */; };
+		CD5756CE2A309D57007D5FEC /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5756CD2A309D57007D5FEC /* OnboardingView.swift */; };
+		CD5756D12A30BCE9007D5FEC /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = CD5756D02A30BCE9007D5FEC /* OpenAI */; };
+		CD5756D32A30BF9C007D5FEC /* OpenAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5756D22A30BF9C007D5FEC /* OpenAI.swift */; };
+		CD5756D72A328979007D5FEC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5756D62A328979007D5FEC /* SettingsView.swift */; };
+		CD987DF329FD969800CC223A /* LastFrameProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD987DF229FD969800CC223A /* LastFrameProcessor.swift */; };
+		CDA7DE7729D66E9F00A17272 /* ScreenRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA7DE7629D66E9F00A17272 /* ScreenRecorder.swift */; };
+		CDA7DE7929D66EE800A17272 /* CaptureEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA7DE7829D66EE800A17272 /* CaptureEngine.swift */; };
+		CDA7DE7B29D66F1C00A17272 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA7DE7A29D66F1C00A17272 /* Note.swift */; };
+		CDA7DE7D29D66F4300A17272 /* Snippet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA7DE7C29D66F4300A17272 /* Snippet.swift */; };
+		CDA7DE7F29D66F5C00A17272 /* ScreenshotFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA7DE7E29D66F5C00A17272 /* ScreenshotFrame.swift */; };
+		CDA7DE8129D66F7400A17272 /* Compactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA7DE8029D66F7400A17272 /* Compactor.swift */; };
+		CDA7DE8329D66F9300A17272 /* ImageAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA7DE8229D66F9300A17272 /* ImageAnalyzer.swift */; };
+		CDA7DE8529D66FAA00A17272 /* SnippetContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA7DE8429D66FAA00A17272 /* SnippetContext.swift */; };
+		CDA7DE8729D66FC000A17272 /* RecognizedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA7DE8629D66FC000A17272 /* RecognizedText.swift */; };
+		CDA7DE8929D66FDB00A17272 /* AppTransitionsLinker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA7DE8829D66FDB00A17272 /* AppTransitionsLinker.swift */; };
+		CDA7DE8B29D66FF400A17272 /* RunningApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA7DE8A29D66FF400A17272 /* RunningApplication.swift */; };
+		CDA7DE8D29D6700800A17272 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA7DE8C29D6700800A17272 /* Helpers.swift */; };
+		CDA7DE8F29D6701B00A17272 /* PostProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA7DE8E29D6701B00A17272 /* PostProcessor.swift */; };
+		CDA7DE9229D6748C00A17272 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA7DE9129D6748C00A17272 /* ContentView.swift */; };
+		CDA7DE9429D6803400A17272 /* SnippetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA7DE9329D6803400A17272 /* SnippetView.swift */; };
+		CDA7DE9629D6804C00A17272 /* EditableSnippetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA7DE9529D6804C00A17272 /* EditableSnippetView.swift */; };
+		CDA7DE9829D6807100A17272 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA7DE9729D6807100A17272 /* ButtonStyle.swift */; };
+		CDD62AEC29D79E430067B973 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD62AEB29D79E430067B973 /* Constants.swift */; };
+		CDDC9DA029F5A2350058BAFA /* ErrorMessageFixer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDC9D9F29F5A2350058BAFA /* ErrorMessageFixer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +61,6 @@
 /* Begin PBXFileReference section */
 		CD0AF78529D60D4D005C1044 /* EssentialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EssentialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD0AF78829D60D4D005C1044 /* EssentialAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppApp.swift; sourceTree = "<group>"; };
-		CD0AF78A29D60D4D005C1044 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CD0AF78C29D60D4E005C1044 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD0AF78F29D60D4E005C1044 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD0AF79129D60D4E005C1044 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -49,6 +71,29 @@
 		CD0AF7A529D60D4E005C1044 /* EssentialAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD0AF7A929D60D4E005C1044 /* EssentialAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppUITests.swift; sourceTree = "<group>"; };
 		CD0AF7AB29D60D4E005C1044 /* EssentialAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CD5756CD2A309D57007D5FEC /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		CD5756D22A30BF9C007D5FEC /* OpenAI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAI.swift; sourceTree = "<group>"; };
+		CD5756D62A328979007D5FEC /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CD987DF229FD969800CC223A /* LastFrameProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastFrameProcessor.swift; sourceTree = "<group>"; };
+		CDA7DE7629D66E9F00A17272 /* ScreenRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenRecorder.swift; sourceTree = "<group>"; };
+		CDA7DE7829D66EE800A17272 /* CaptureEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureEngine.swift; sourceTree = "<group>"; };
+		CDA7DE7A29D66F1C00A17272 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		CDA7DE7C29D66F4300A17272 /* Snippet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snippet.swift; sourceTree = "<group>"; };
+		CDA7DE7E29D66F5C00A17272 /* ScreenshotFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotFrame.swift; sourceTree = "<group>"; };
+		CDA7DE8029D66F7400A17272 /* Compactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compactor.swift; sourceTree = "<group>"; };
+		CDA7DE8229D66F9300A17272 /* ImageAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAnalyzer.swift; sourceTree = "<group>"; };
+		CDA7DE8429D66FAA00A17272 /* SnippetContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnippetContext.swift; sourceTree = "<group>"; };
+		CDA7DE8629D66FC000A17272 /* RecognizedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognizedText.swift; sourceTree = "<group>"; };
+		CDA7DE8829D66FDB00A17272 /* AppTransitionsLinker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTransitionsLinker.swift; sourceTree = "<group>"; };
+		CDA7DE8A29D66FF400A17272 /* RunningApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningApplication.swift; sourceTree = "<group>"; };
+		CDA7DE8C29D6700800A17272 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		CDA7DE8E29D6701B00A17272 /* PostProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostProcessor.swift; sourceTree = "<group>"; };
+		CDA7DE9129D6748C00A17272 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CDA7DE9329D6803400A17272 /* SnippetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnippetView.swift; sourceTree = "<group>"; };
+		CDA7DE9529D6804C00A17272 /* EditableSnippetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableSnippetView.swift; sourceTree = "<group>"; };
+		CDA7DE9729D6807100A17272 /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
+		CDD62AEB29D79E430067B973 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CDDC9D9F29F5A2350058BAFA /* ErrorMessageFixer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessageFixer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD5756D12A30BCE9007D5FEC /* OpenAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,13 +145,30 @@
 		CD0AF78729D60D4D005C1044 /* EssentialApp */ = {
 			isa = PBXGroup;
 			children = (
+				CDA7DE9029D6746600A17272 /* View */,
 				CD0AF78829D60D4D005C1044 /* EssentialAppApp.swift */,
-				CD0AF78A29D60D4D005C1044 /* ContentView.swift */,
 				CD0AF78C29D60D4E005C1044 /* Assets.xcassets */,
 				CD0AF79129D60D4E005C1044 /* Persistence.swift */,
 				CD0AF79629D60D4E005C1044 /* EssentialApp.entitlements */,
 				CD0AF79329D60D4E005C1044 /* EssentialApp.xcdatamodeld */,
 				CD0AF78E29D60D4E005C1044 /* Preview Content */,
+				CDA7DE7629D66E9F00A17272 /* ScreenRecorder.swift */,
+				CDA7DE7829D66EE800A17272 /* CaptureEngine.swift */,
+				CDA7DE7A29D66F1C00A17272 /* Note.swift */,
+				CDA7DE7C29D66F4300A17272 /* Snippet.swift */,
+				CDA7DE7E29D66F5C00A17272 /* ScreenshotFrame.swift */,
+				CDA7DE8029D66F7400A17272 /* Compactor.swift */,
+				CDA7DE8229D66F9300A17272 /* ImageAnalyzer.swift */,
+				CDA7DE8429D66FAA00A17272 /* SnippetContext.swift */,
+				CDA7DE8629D66FC000A17272 /* RecognizedText.swift */,
+				CDA7DE8829D66FDB00A17272 /* AppTransitionsLinker.swift */,
+				CDA7DE8A29D66FF400A17272 /* RunningApplication.swift */,
+				CDA7DE8C29D6700800A17272 /* Helpers.swift */,
+				CDA7DE8E29D6701B00A17272 /* PostProcessor.swift */,
+				CDD62AEB29D79E430067B973 /* Constants.swift */,
+				CDDC9D9F29F5A2350058BAFA /* ErrorMessageFixer.swift */,
+				CD987DF229FD969800CC223A /* LastFrameProcessor.swift */,
+				CD5756D22A30BF9C007D5FEC /* OpenAI.swift */,
 			);
 			path = EssentialApp;
 			sourceTree = "<group>";
@@ -135,6 +198,19 @@
 			path = EssentialAppUITests;
 			sourceTree = "<group>";
 		};
+		CDA7DE9029D6746600A17272 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CDA7DE9129D6748C00A17272 /* ContentView.swift */,
+				CDA7DE9329D6803400A17272 /* SnippetView.swift */,
+				CDA7DE9529D6804C00A17272 /* EditableSnippetView.swift */,
+				CDA7DE9729D6807100A17272 /* ButtonStyle.swift */,
+				CD5756CD2A309D57007D5FEC /* OnboardingView.swift */,
+				CD5756D62A328979007D5FEC /* SettingsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,6 +227,9 @@
 			dependencies = (
 			);
 			name = EssentialApp;
+			packageProductDependencies = (
+				CD5756D02A30BCE9007D5FEC /* OpenAI */,
+			);
 			productName = EssentialApp;
 			productReference = CD0AF78529D60D4D005C1044 /* EssentialApp.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +302,9 @@
 				Base,
 			);
 			mainGroup = CD0AF77C29D60D4D005C1044;
+			packageReferences = (
+				CD5756CF2A30BCE9007D5FEC /* XCRemoteSwiftPackageReference "OpenAI" */,
+			);
 			productRefGroup = CD0AF78629D60D4D005C1044 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -266,9 +348,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD0AF79229D60D4E005C1044 /* Persistence.swift in Sources */,
-				CD0AF78B29D60D4D005C1044 /* ContentView.swift in Sources */,
+				CDA7DE7F29D66F5C00A17272 /* ScreenshotFrame.swift in Sources */,
+				CDA7DE8929D66FDB00A17272 /* AppTransitionsLinker.swift in Sources */,
+				CDA7DE8729D66FC000A17272 /* RecognizedText.swift in Sources */,
+				CDA7DE8F29D6701B00A17272 /* PostProcessor.swift in Sources */,
+				CDA7DE7D29D66F4300A17272 /* Snippet.swift in Sources */,
+				CDA7DE8329D66F9300A17272 /* ImageAnalyzer.swift in Sources */,
+				CDDC9DA029F5A2350058BAFA /* ErrorMessageFixer.swift in Sources */,
+				CDA7DE9229D6748C00A17272 /* ContentView.swift in Sources */,
+				CD5756D32A30BF9C007D5FEC /* OpenAI.swift in Sources */,
+				CDA7DE8529D66FAA00A17272 /* SnippetContext.swift in Sources */,
+				CD987DF329FD969800CC223A /* LastFrameProcessor.swift in Sources */,
+				CDA7DE7729D66E9F00A17272 /* ScreenRecorder.swift in Sources */,
+				CD5756CE2A309D57007D5FEC /* OnboardingView.swift in Sources */,
+				CDA7DE8129D66F7400A17272 /* Compactor.swift in Sources */,
+				CDD62AEC29D79E430067B973 /* Constants.swift in Sources */,
+				CDA7DE7929D66EE800A17272 /* CaptureEngine.swift in Sources */,
+				CDA7DE8B29D66FF400A17272 /* RunningApplication.swift in Sources */,
+				CDA7DE9829D6807100A17272 /* ButtonStyle.swift in Sources */,
 				CD0AF79529D60D4E005C1044 /* EssentialApp.xcdatamodeld in Sources */,
 				CD0AF78929D60D4D005C1044 /* EssentialAppApp.swift in Sources */,
+				CDA7DE8D29D6700800A17272 /* Helpers.swift in Sources */,
+				CDA7DE9429D6803400A17272 /* SnippetView.swift in Sources */,
+				CDA7DE7B29D66F1C00A17272 /* Note.swift in Sources */,
+				CDA7DE9629D6804C00A17272 /* EditableSnippetView.swift in Sources */,
+				CD5756D72A328979007D5FEC /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +528,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = EssentialApp/EssentialApp.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -451,6 +556,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = EssentialApp/EssentialApp.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -584,6 +690,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CD5756CF2A30BCE9007D5FEC /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CD5756D02A30BCE9007D5FEC /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD5756CF2A30BCE9007D5FEC /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		CD0AF79329D60D4E005C1044 /* EssentialApp.xcdatamodeld */ = {

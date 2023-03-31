@@ -1,9 +1,76 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
-        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22F66" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Fixit" representedClassName="Fixit" syncable="YES" codeGenerationType="class">
+        <attribute name="errorText" optional="YES" attributeType="String"/>
+        <relationship name="parentScreenshotFrame" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ScreenshotFrame" inverseName="fixits" inverseEntity="ScreenshotFrame"/>
+        <relationship name="suggestions" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Suggestion" inverseName="parentFixit" inverseEntity="Suggestion"/>
     </entity>
-    <elements>
-        <element name="Item" positionX="-63" positionY="-18" width="128" height="44"/>
-    </elements>
+    <entity name="FrameSearchString" representedClassName="FrameSearchString" syncable="YES" codeGenerationType="class">
+        <attribute name="query" optional="YES" attributeType="String"/>
+        <relationship name="parentSnippetContext" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SnippetContext" inverseName="frameSearchStrings" inverseEntity="SnippetContext"/>
+    </entity>
+    <entity name="Note" representedClassName="Note" syncable="YES" codeGenerationType="class">
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="snippets_" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Snippet" inverseName="parentNote" inverseEntity="Snippet"/>
+    </entity>
+    <entity name="RecognizedText" representedClassName="RecognizedText" syncable="YES" codeGenerationType="class">
+        <attribute name="bottomRightX" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="bottomRightY" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="isCompact" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="modelType" optional="YES" attributeType="String"/>
+        <attribute name="orderIndx" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="text_" optional="YES" attributeType="String"/>
+        <attribute name="topLeftX" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="topLeftY" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="parentScreenshotFrame" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ScreenshotFrame" inverseName="ocrTexts_" inverseEntity="ScreenshotFrame"/>
+    </entity>
+    <entity name="RunningApplication" representedClassName="RunningApplication" syncable="YES" codeGenerationType="class">
+        <attribute name="applicationName" optional="YES" attributeType="String"/>
+        <attribute name="bundleIdentifier" optional="YES" attributeType="String"/>
+        <attribute name="frameHeight" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="frameWidth" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="frameX" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="frameY" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="windowTitle" optional="YES" attributeType="String"/>
+        <relationship name="taggedScreenshotFrame" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ScreenshotFrame" inverseName="taggedRunningApplication" inverseEntity="ScreenshotFrame"/>
+    </entity>
+    <entity name="ScreenshotFrame" representedClassName="ScreenshotFrame" syncable="YES" codeGenerationType="class">
+        <attribute name="accurateTranscript" optional="YES" attributeType="String"/>
+        <attribute name="accurateTranscriptHash" optional="YES" attributeType="String"/>
+        <attribute name="areOcrBoxesCompacted" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="dirtyRectsFractionOfDisplay" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="displayTime" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="fastTranscript" optional="YES" attributeType="String"/>
+        <attribute name="fastTranscriptHash" optional="YES" attributeType="String"/>
+        <attribute name="height" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
+        <attribute name="isCompacted" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isUploaded" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="width" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="fixits" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Fixit" inverseName="parentScreenshotFrame" inverseEntity="Fixit"/>
+        <relationship name="ocrTexts_" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="RecognizedText" inverseName="parentScreenshotFrame" inverseEntity="RecognizedText"/>
+        <relationship name="parentSnippetContext" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SnippetContext" inverseName="screenshotFrames_" inverseEntity="SnippetContext"/>
+        <relationship name="taggedRunningApplication" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="RunningApplication" inverseName="taggedScreenshotFrame" inverseEntity="RunningApplication"/>
+    </entity>
+    <entity name="Snippet" representedClassName="Snippet" syncable="YES" codeGenerationType="class">
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="editable" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="text_" optional="YES" attributeType="String"/>
+        <relationship name="parentNote" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Note" inverseName="snippets_" inverseEntity="Note"/>
+        <relationship name="snippetContext" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="SnippetContext" inverseName="parentSnippet" inverseEntity="SnippetContext"/>
+    </entity>
+    <entity name="SnippetContext" representedClassName="SnippetContext" syncable="YES" codeGenerationType="class">
+        <attribute name="contextLevel" optional="YES" attributeType="String"/>
+        <attribute name="wasFixitRequested" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="frameSearchStrings" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="FrameSearchString" inverseName="parentSnippetContext" inverseEntity="FrameSearchString"/>
+        <relationship name="parentSnippet" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Snippet" inverseName="snippetContext" inverseEntity="Snippet"/>
+        <relationship name="screenshotFrames_" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="ScreenshotFrame" inverseName="parentSnippetContext" inverseEntity="ScreenshotFrame"/>
+    </entity>
+    <entity name="Suggestion" representedClassName="Suggestion" syncable="YES" codeGenerationType="class">
+        <attribute name="text" optional="YES" attributeType="String"/>
+        <relationship name="parentFixit" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Fixit" inverseName="suggestions" inverseEntity="Fixit"/>
+    </entity>
 </model>
