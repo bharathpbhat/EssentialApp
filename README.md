@@ -18,7 +18,7 @@ Essential is a memory layer for your screen. Whenever you read/do something you 
 
 ## Download
 
-[Download Essential for Mac]() or clone this repo and run from source.
+[Download Essential for Mac](https://storage.googleapis.com/essential-app-download-files/releases/20230608/Essential%20App.dmg) or clone this repo and run from source.
 
 ## Feedback
 
